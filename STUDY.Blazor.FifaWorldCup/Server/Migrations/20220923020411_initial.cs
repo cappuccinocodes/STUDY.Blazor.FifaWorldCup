@@ -30,7 +30,12 @@ namespace STUDY.Blazor.FifaWorldCup.Server.Migrations
             migrationBuilder.InsertData(
                 table: "Matches",
                 columns: new[] { "Id", "Date", "GoalsTeam1", "GoalsTeam2", "Seed", "Team1", "Team2", "Venue" },
-                values: new object[] { 1, "2022-05-05", 1, 0, 'A', "Brazil", "Germany", "King Stadium" });
+                values: new object[] { 1, "2022-11-20 16:00:00", 0, 0, 'A', "Qatar", "Ecuador", "Al Bayt Stadium, Al Khor" });
+
+            migrationBuilder.InsertData(
+                table: "Matches",
+                columns: new[] { "Id", "Date", "GoalsTeam1", "GoalsTeam2", "Seed", "Team1", "Team2", "Venue" },
+                values: new object[] { 2, "2022-11-21 13:00:00", 0, 0, 'B', "England", "Iran", "Khalifa International Stadium, Doha" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

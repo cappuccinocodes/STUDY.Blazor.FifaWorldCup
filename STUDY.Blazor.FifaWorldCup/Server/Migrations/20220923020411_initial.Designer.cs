@@ -10,7 +10,7 @@ using STUDY.Blazor.FifaWorldCup.Server.Models;
 namespace STUDY.Blazor.FifaWorldCup.Server.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20220923014612_initial")]
+    [Migration("20220923020411_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -57,13 +57,24 @@ namespace STUDY.Blazor.FifaWorldCup.Server.Migrations
                         new
                         {
                             Id = 1,
-                            Date = "2022-05-05",
-                            GoalsTeam1 = 1,
+                            Date = "2022-11-20 16:00:00",
+                            GoalsTeam1 = 0,
                             GoalsTeam2 = 0,
                             Seed = 'A',
-                            Team1 = "Brazil",
-                            Team2 = "Germany",
-                            Venue = "King Stadium"
+                            Team1 = "Qatar",
+                            Team2 = "Ecuador",
+                            Venue = "Al Bayt Stadium, Al Khor"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Date = "2022-11-21 13:00:00",
+                            GoalsTeam1 = 0,
+                            GoalsTeam2 = 0,
+                            Seed = 'B',
+                            Team1 = "England",
+                            Team2 = "Iran",
+                            Venue = "Khalifa International Stadium, Doha"
                         });
                 });
 #pragma warning restore 612, 618

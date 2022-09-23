@@ -20,14 +20,26 @@ public partial class DatabaseContext : DbContext
             new Match
             {
                 Id = 1,
-                Team1 = "Brazil",
-                Team2 = "Germany",
-                GoalsTeam1 = 1,
+                Team1 = "Qatar",
+                Team2 = "Ecuador",
+                GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
                 Seed = 'A',
-                Venue = "King Stadium",
-                Date = "2022-05-05"
+                Venue = "Al Bayt Stadium, Al Khor",
+                Date = "2022-11-20 16:00:00"
+            },
+            new Match
+            {
+                Id = 2,
+                Team1 = "England",
+                Team2 = "Iran",
+                GoalsTeam1 = 0,
+                GoalsTeam2 = 0,
+                Seed = 'B',
+                Venue = "Khalifa International Stadium, Doha",
+                Date = "2022-11-21 13:00:00"
             });
+
 
         OnModelCreatingPartial(modelBuilder);
     }
