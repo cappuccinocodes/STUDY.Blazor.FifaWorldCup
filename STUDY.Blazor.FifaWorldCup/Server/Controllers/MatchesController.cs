@@ -5,7 +5,7 @@ using STUDY.Blazor.FifaWorldCup.Shared.Models;
 namespace STUDY.Blazor.FifaWorldCup.Server.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class MatchesController : ControllerBase
     {
         readonly DatabaseContext _dbContext = new();
