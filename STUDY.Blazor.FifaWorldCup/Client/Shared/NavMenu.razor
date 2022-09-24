@@ -11,18 +11,23 @@
     <nav class="flex-column">
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
+                <span class="oi oi-home" aria-hidden="true"></span> All Matches
             </NavLink>
         </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
+        @foreach (var g in groups)
+        {
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="@($"groups/{g}")" Match="NavLinkMatch.All">
+                    <span class="oi oi-home" aria-hidden="true">Group @g</span>
+                </NavLink>
+            </div>
+        }
     </nav>
 </div>
 
 @code {
+    private char[] groups = new char[] { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H' };
+
     private bool collapseNavMenu = true;
 
     private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;

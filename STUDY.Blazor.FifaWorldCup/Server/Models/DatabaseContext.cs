@@ -38,7 +38,53 @@ public partial class DatabaseContext : DbContext
                 Seed = 'B',
                 Venue = "Khalifa International Stadium, Doha",
                 Date = "2022-11-21 13:00:00"
-            });
+            },
+            new Match
+            {
+                Id = 3,
+                Team1 = "Senegal",
+                Team2 = "Netherlands",
+                GoalsTeam1 = 0,
+                GoalsTeam2 = 0,
+                Seed = 'A',
+                Venue = "Al Thumama Stadium, Doha",
+                Date = "2022-11-21 16:00:00"
+            },
+            new Match
+            {
+                Id = 4,
+                Team1 = "USA",
+                Team2 = "Wales",
+                GoalsTeam1 = 0,
+                GoalsTeam2 = 0,
+                Seed = 'B',
+                Venue = "Ahmad bin Ali Stadium, Al Rayyan",
+                Date = "2022-11-21 19:00:00"
+            }
+            ,
+            new Match
+            {
+                Id = 5,
+                Team1 = "Argentina",
+                Team2 = "Saudi Arabia",
+                GoalsTeam1 = 0,
+                GoalsTeam2 = 0,
+                Seed = 'C',
+                Venue = "Lusail Iconic Stadium, Lusail",
+                Date = "2022-11-22 10:00:00"
+            },
+            new Match
+            {
+                Id = 6,
+                Team1 = "Denmark",
+                Team2 = "Tunisia",
+                GoalsTeam1 = 0,
+                GoalsTeam2 = 0,
+                Seed = 'D',
+                Venue = "Education City Stadium, Al Rayyan",
+                Date = "2022-11-22 13:00:00"
+            }
+            );
 
 
         OnModelCreatingPartial(modelBuilder);
