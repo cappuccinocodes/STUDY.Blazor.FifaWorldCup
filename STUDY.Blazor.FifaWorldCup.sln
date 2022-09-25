@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STUDY.Blazor.FifaWorldCup.Server", "STUDY.Blazor.FifaWorldCup\Server\STUDY.Blazor.FifaWorldCup.Server.csproj", "{4045E3B4-BAB8-4254-AFEC-99AD53E122CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "STUDY.Blazor.FifaWorldCup.Server", "STUDY.Blazor.FifaWorldCup\Server\STUDY.Blazor.FifaWorldCup.Server.csproj", "{4045E3B4-BAB8-4254-AFEC-99AD53E122CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STUDY.Blazor.FifaWorldCup.Client", "STUDY.Blazor.FifaWorldCup\Client\STUDY.Blazor.FifaWorldCup.Client.csproj", "{BB5807B9-B857-4A21-8FC1-237C07974222}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "STUDY.Blazor.FifaWorldCup.Client", "STUDY.Blazor.FifaWorldCup\Client\STUDY.Blazor.FifaWorldCup.Client.csproj", "{BB5807B9-B857-4A21-8FC1-237C07974222}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STUDY.Blazor.FifaWorldCup.Shared", "STUDY.Blazor.FifaWorldCup\Shared\STUDY.Blazor.FifaWorldCup.Shared.csproj", "{F9ABEFA4-6963-4D9F-B9F6-2A1CD0772C51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "STUDY.Blazor.FifaWorldCup.Shared", "STUDY.Blazor.FifaWorldCup\Shared\STUDY.Blazor.FifaWorldCup.Shared.csproj", "{F9ABEFA4-6963-4D9F-B9F6-2A1CD0772C51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

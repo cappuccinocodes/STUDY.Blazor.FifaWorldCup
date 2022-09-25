@@ -27,5 +27,20 @@ namespace STUDY.Blazor.FifaWorldCup.Server.Controllers
                 throw;
             }
         }
+
+        [HttpPost]
+        public void UpdateMatch(Match match)   
+        {
+            try
+            {
+                _dbContext.Matches.Update(match);
+                _dbContext.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+        }
     }
 }

@@ -1,18 +1,28 @@
 ﻿@page "/"
 @using STUDY.Blazor.FifaWorldCup.Shared.Models
+
 @inject HttpClient Http
 
 @foreach (var m in matches)
 {
-    <p>@m.Team1, @m.Team2</p>
+    <Input match="@m"/>
 }
 
 @code {
     protected List<Match> matches = new();
 
+    Match match = new();
+
+    [Parameter] public EventCallback OnValidSubmit { get; set; }
+
     protected override async Task OnInitializedAsync()
     {
         await FetchAll();
+    }
+
+    protected async override Task OnParametersSetAsync()
+    {
+        Console.WriteLine("Blah");
     }
 
     protected async Task FetchAll()
@@ -27,4 +37,6 @@
         }
 
     }
+
+    
 }

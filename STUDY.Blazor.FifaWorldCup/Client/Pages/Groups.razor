@@ -1,0 +1,53 @@
+﻿@page "/group/{Group}"
+@using STUDY.Blazor.FifaWorldCup.Shared.Models
+@inject HttpClient Http
+
+@foreach (var m in matches)
+{
+    <Input match="@m"/>
+}
+
+@code {
+    [Parameter]
+    public string Group { get; set; }
+    protected List<Match> matches = new();
+    protected List<Team> teams = new();
+
+    Match match = new();
+
+    [Parameter] public EventCallback OnValidSubmit { get; set; }
+
+    protected async override Task OnParametersSetAsync()
+    {
+        await Fetch();
+    }
+
+    protected async Task Fetch()
+    {
+        var group = Group.ToCharArray()[0];
+        try
+        {
+            matches = await Http.GetFromJsonAsync<List<Match>>("api/Matches");
+            matches = matches.Where(x => x.Seed == group).ToList();
+            teams = GetTeams(matches);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+    }
+
+    internal List<Team> GetTeams(List<Match> incomingMatches) {
+        var teamNames = matches.Select(m => m.Team1).Concat(matches.Select(m => m.Team2)).Distinct();
+        foreach (var team in teamNames){
+            teams.Add(new Team
+                {
+                    Name = team,
+                    Goals = GetGoals(team),
+                    GoalsAgainst = GetGoalsAgainst(team),
+                    Points = GetPoints(team)
+
+                });                                    
+        }
+    }
+}

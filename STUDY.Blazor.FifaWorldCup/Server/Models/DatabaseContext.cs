@@ -83,6 +83,17 @@ public partial class DatabaseContext : DbContext
                 Seed = 'D',
                 Venue = "Education City Stadium, Al Rayyan",
                 Date = "2022-11-22 13:00:00"
+            },
+            new Match
+            {
+                Id = 7,
+                Team1 = "Mexico",
+                Team2 = "Poland",
+                GoalsTeam1 = 0,
+                GoalsTeam2 = 0,
+                Seed = 'D',
+                Venue = "Stadium 974",
+                Date = "2022-11-22 13:00:00"
             }
             );
 
