@@ -2,9 +2,31 @@
 @using STUDY.Blazor.FifaWorldCup.Shared.Models
 @inject HttpClient Http
 
+<table>
+    <tr>
+    <th></th>
+    <th>MP</th>
+    <th>Pts</th>
+    <th>G</th>
+    <th>GA</th>
+    <th>GD</th>
+    </tr>
+    @foreach (var t in teams)
+    {
+        <tr>
+            <td>@t.Name</td>
+            <td>@t.MatchesPlayed</td>
+            <td>@t.Points</td>
+            <td>@t.Goals</td>
+            <td>@t.GoalsAgainst</td>
+            <td>@t.GoalsDifference</td>
+        </tr>
+    }
+</table>
+
 @foreach (var m in matches)
 {
-    <Input match="@m"/>
+    <Input match="@m" />
 }
 
 @code {
@@ -24,6 +46,7 @@
 
     protected async Task Fetch()
     {
+        teams.Clear();
         var group = Group.ToCharArray()[0];
         try
         {
@@ -37,17 +60,82 @@
         }
     }
 
-    internal List<Team> GetTeams(List<Match> incomingMatches) {
+    internal List<Team> GetTeams(List<Match> incomingMatches)
+    {
         var teamNames = matches.Select(m => m.Team1).Concat(matches.Select(m => m.Team2)).Distinct();
-        foreach (var team in teamNames){
+        foreach (var team in teamNames)
+        {
+            var groupData = GetGroupData(team);
             teams.Add(new Team
                 {
                     Name = team,
-                    Goals = GetGoals(team),
-                    GoalsAgainst = GetGoalsAgainst(team),
-                    Points = GetPoints(team)
-
-                });                                    
+                    Points = groupData[0],
+                    Goals = groupData[1],
+                    GoalsAgainst = groupData[2],
+                    GoalsDifference = groupData[3],
+                    MatchesPlayed = groupData[4]
+                });
         }
+
+        return teams.OrderByDescending(x => x.Points)
+        .ThenBy(x => x.GoalsDifference)
+        .ThenBy(x => x.Goals)
+        .ToList();
+    }
+
+    internal int[] GetGroupData(string team)
+    {
+        var result = new int[5];
+        var points = 0;
+        var goals = 0;
+        var goalsAgainst = 0;
+        var matchesPlayed = 0;
+
+        foreach (var match in matches)
+        {
+            if (match.IsFinished) {
+                if (match.Team1 == team)
+                {
+                    if (match.GoalsTeam1 > match.GoalsTeam2)
+                    {
+                        points += 3;
+                    }
+                    else if (match.GoalsTeam1 == match.GoalsTeam2)
+                    {
+                        points += 1;
+                    }
+
+                    goals = match.GoalsTeam1 + goals;
+                    goalsAgainst = match.GoalsTeam2 + goalsAgainst;
+                    matchesPlayed += 1;
+
+                }
+                else if (match.Team2 == team)
+                {
+                    if (match.GoalsTeam2 > match.GoalsTeam1)
+                    {
+                        points += 3;
+                    }
+                    else if (match.GoalsTeam1 == match.GoalsTeam2)
+                    {
+                        points += 1;
+                    }
+
+                    goals = match.GoalsTeam2 + goals;
+                    goalsAgainst = match.GoalsTeam1 + goalsAgainst;
+                    matchesPlayed += 1;
+                }
+
+                var goalDifference = goals - goalsAgainst;
+
+                result[0] = points;
+                result[1] = goals;
+                result[2] = goalsAgainst;
+                result[3] = goalDifference;
+                result[4] = matchesPlayed;
+            }
+        }
+
+        return result;
     }
 }

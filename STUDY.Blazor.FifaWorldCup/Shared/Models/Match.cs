@@ -10,4 +10,5 @@ public class Match
     public char Seed { get; set; }
     public string Venue { get; set; }
     public string Date { get; set; }
+    public bool IsFinished { get; set; }
 }

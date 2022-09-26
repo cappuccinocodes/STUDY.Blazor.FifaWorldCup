@@ -20,7 +20,8 @@
     protected async Task SaveItem()
     {
         Console.WriteLine($"{match.Team1} {match.GoalsTeam1} x {match.Team2} {match.GoalsTeam2}");
-        
+
+        match.IsFinished = true;
         await Http.PostAsJsonAsync("api/Matches", match);
     }
 }
