@@ -264,9 +264,9 @@ public partial class DatabaseContext : DbContext
                 Team2 = "Australia",
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
-                Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Seed = 'D',
+                Venue = "Al Janoub Stadium, Al Wakrah",
+                Date = "2022-11-26 10:00:00",
                 IsFinished = false
             },
             new Match
@@ -288,9 +288,9 @@ public partial class DatabaseContext : DbContext
                 Team2 = "Denmark",
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
-                Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Seed = 'D',
+                Venue = "Stadium 974, Doha",
+                Date = "2022-11-26 16:00:00",
                 IsFinished = false
             },
             new Match
@@ -456,9 +456,9 @@ public partial class DatabaseContext : DbContext
                 Team2 = "Denmark",
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
-                Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Seed = 'D',
+                Venue = "Al Janoub Stadium, Al Wakrah",
+                Date = "2022-11-30 15:00:00",
                 IsFinished = false
             },
             new Match
@@ -468,9 +468,9 @@ public partial class DatabaseContext : DbContext
                 Team2 = "France",
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
-                Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Seed = 'D',
+                Venue = "Education City Stadium, Al Rayyan",
+                Date = "2022-11-30 15:00:00",
                 IsFinished = false
             },
             new Match
