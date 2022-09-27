@@ -25,7 +25,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
                 Seed = 'A',
-                Venue = "Al Bayt Stadium, Al Khor",
+                Venue = Venue.AlBayt,
                 Date = "2022-11-20 16:00:00",
                 IsFinished = false,
             },
@@ -37,7 +37,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
                 Seed = 'B',
-                Venue = "Khalifa International Stadium, Doha",
+                Venue = Venue.Khalifa,
                 Date = "2022-11-21 13:00:00",
                 IsFinished = false
             },
@@ -49,7 +49,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
                 Seed = 'A',
-                Venue = "Al Thumama Stadium, Doha",
+                Venue = Venue.AlThumama,
                 Date = "2022-11-21 16:00:00",
                 IsFinished = false
             },
@@ -61,7 +61,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
                 Seed = 'B',
-                Venue = "Ahmad bin Ali Stadium, Al Rayyan",
+                Venue = Venue.Ahmad,
                 Date = "2022-11-21 19:00:00",
                 IsFinished = false
             },
@@ -73,7 +73,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
                 Seed = 'C',
-                Venue = "Lusail Iconic Stadium, Lusail",
+                Venue = Venue.Lusail,
                 Date = "2022-11-22 10:00:00",
                 IsFinished = false
             },
@@ -85,7 +85,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
                 Seed = 'D',
-                Venue = "Education City Stadium, Al Rayyan",
+                Venue = Venue.Education,
                 Date = "2022-11-22 13:00:00",
                 IsFinished = false
             },
@@ -97,7 +97,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
                 Seed = 'C',
-                Venue = "Stadium 974, Doha",
+                Venue = Venue.Stadium974,
                 Date = "2022-11-22 16:00:00",
                 IsFinished = false
             },
@@ -109,7 +109,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
                 Seed = 'D',
-                Venue = "Al Janoub Stadium, Al Wakrah",
+                Venue = Venue.AlJanoub,
                 Date = "2022-11-22 19:00:00",
                 IsFinished = false
             },
@@ -121,7 +121,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
                 Seed = 'F',
-                Venue = "Al Bayt Stadium, Al Khor",
+                Venue = Venue.AlBayt,
                 Date = "2022-11-23 10:00:00",
                 IsFinished = false
             },
@@ -133,7 +133,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
                 Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
+                Venue = Venue.Khalifa,
                 Date = "2022-11-23 13:00:00",
                 IsFinished = false
             },
@@ -145,8 +145,8 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
                 Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Venue = "Al Thumama Stadium, Doha",
+                Date = "2022-11-23 16:00:00",
                 IsFinished = false
             },
             new Match
@@ -156,9 +156,9 @@ public partial class DatabaseContext : DbContext
                 Team2 = "Canada",
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
-                Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Seed = 'F',
+                Venue = "Ahmad bin Ali Stadium, Al Rayyan",
+                Date = "2022-11-23 19:00:00",
                 IsFinished = false
             },
             new Match
@@ -168,9 +168,9 @@ public partial class DatabaseContext : DbContext
                 Team2 = "Cameroon",
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
-                Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Seed = 'G',
+                Venue = "Al Janoub Stadium, Al Wakrah",
+                Date = "2022-11-23 10:00:00",
                 IsFinished = false
             },
             new Match
@@ -180,9 +180,9 @@ public partial class DatabaseContext : DbContext
                 Team2 = "Korea Republic",
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
-                Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Seed = 'H',
+                Venue = "Education City Stadium, Al Rayyan",
+                Date = "2022-11-24 13:00:00",
                 IsFinished = false
             },
             new Match
@@ -192,9 +192,9 @@ public partial class DatabaseContext : DbContext
                 Team2 = "Ghana",
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
-                Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Seed = 'H',
+                Venue = "Stadium 974, Doha",
+                Date = "2022-11-24 16:00:00",
                 IsFinished = false
             },
             new Match
@@ -313,8 +313,8 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
                 Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Venue = "Ahmad bin Ali Stadium, Al Rayyan",
+                Date = "2022-11-27 10:00:00",
                 IsFinished = false
             },
             new Match
@@ -324,9 +324,9 @@ public partial class DatabaseContext : DbContext
                 Team2 = "Morocco",
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
-                Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Seed = 'F',
+                Venue = "Al Thumama Stadium, Doha",
+                Date = "2022-11-27 13:00:00",
                 IsFinished = false
             },
             new Match
@@ -336,9 +336,9 @@ public partial class DatabaseContext : DbContext
                 Team2 = "Canada",
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
-                Seed = 'E',
+                Seed = 'F',
                 Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Date = "2022-11-27 16:00:00",
                 IsFinished = false
             },
             new Match
@@ -349,8 +349,8 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
                 Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Venue = "Al Bayt Stadium, Al Khor",
+                Date = "2022-11-27 19:00:00",
                 IsFinished = false
             },
             new Match
@@ -360,9 +360,9 @@ public partial class DatabaseContext : DbContext
                 Team2 = "Serbia",
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
-                Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Seed = 'G',
+                Venue = "Al Janoub Stadium, Al Wakrah",
+                Date = "2022-11-28 10:00:00",
                 IsFinished = false
             },
             new Match
@@ -372,9 +372,9 @@ public partial class DatabaseContext : DbContext
                 Team2 = "Ghana",
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
-                Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Seed = 'H',
+                Venue = "Education City Stadium, Al Rayyan",
+                Date = "2022-11-28 13:00:00",
                 IsFinished = false
             },
             new Match
@@ -384,9 +384,9 @@ public partial class DatabaseContext : DbContext
                 Team2 = "Switzerland",
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
-                Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Seed = 'G',
+                Venue = "Stadium 974, Doha",
+                Date = "2022-11-28 16:00:00",
                 IsFinished = false
             },
             new Match
@@ -396,9 +396,9 @@ public partial class DatabaseContext : DbContext
                 Team2 = "Uruguay",
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
-                Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Seed = 'H',
+                Venue = "Lusail Iconic Stadium, Lusail",
+                Date = "2022-11-28 19:00:00",
                 IsFinished = false
             },
             new Match
@@ -504,9 +504,9 @@ public partial class DatabaseContext : DbContext
                 Team2 = "Belgium",
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
-                Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Seed = 'F',
+                Venue = "Ahmad bin Ali Stadium, Al Rayyan",
+                Date = "2022-12-01 15:00:00",
                 IsFinished = false
             },
             new Match
@@ -516,9 +516,9 @@ public partial class DatabaseContext : DbContext
                 Team2 = "Morocco",
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
-                Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Seed = 'F',
+                Venue = "Al Thumama Stadium, Doha",
+                Date = "2022-12-01 15:00:00",
                 IsFinished = false
             },
             new Match
@@ -530,7 +530,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = 'E',
                 Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Date = "2022-12-01 19:00:00",
                 IsFinished = false
             },
             new Match
@@ -541,8 +541,8 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
                 Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Venue = "Al Bayt Stadium, Al Khor",
+                Date = "2022-12-01 19:00:00",
                 IsFinished = false
             },
             new Match
@@ -552,9 +552,9 @@ public partial class DatabaseContext : DbContext
                 Team2 = "Uruguay",
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
-                Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Seed = 'H',
+                Venue = "Al Janoub Stadium, Al Wakrah",
+                Date = "2022-12-02 15:00:00",
                 IsFinished = false
             },
             new Match
@@ -564,9 +564,9 @@ public partial class DatabaseContext : DbContext
                 Team2 = "Portugal",
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
-                Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Seed = 'H',
+                Venue = "Education City Stadium, Al Rayyan",
+                Date = "2022-12-02 15:00:00",
                 IsFinished = false
             },
             new Match
@@ -576,9 +576,9 @@ public partial class DatabaseContext : DbContext
                 Team2 = "Switzerland",
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
-                Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Seed = 'G',
+                Venue = "Stadium 974, Doha",
+                Date = "2022-12-02 19:00:00",
                 IsFinished = false
             },
             new Match
@@ -588,9 +588,9 @@ public partial class DatabaseContext : DbContext
                 Team2 = "Brazil",
                 GoalsTeam1 = 0,
                 GoalsTeam2 = 0,
-                Seed = 'E',
-                Venue = "Khalifa International Stadium, Doha",
-                Date = "2022-11-23 13:00:00",
+                Seed = 'G',
+                Venue = "Lusail Iconic Stadium, Lusail",
+                Date = "2022-12-02 19:00:00",
                 IsFinished = false
             }
             );
