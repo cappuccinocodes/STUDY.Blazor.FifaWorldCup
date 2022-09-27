@@ -6,11 +6,11 @@ namespace STUDY.Blazor.FifaWorldCup.Shared.Models;
 public class Match
 {
     public int Id { get; set; }
-    public string Team1 { get; set; }
-    public string Team2 { get; set; }
+    public Country Team1 { get; set; }
+    public Country Team2 { get; set; }
     public int GoalsTeam1 { get; set; }
     public int GoalsTeam2 { get; set; }
-    public char Seed { get; set; }
+    public Seed Seed { get; set; }
     public Venue Venue { get; set; }
     public string Date { get; set; }
     public bool IsFinished { get; set; }
@@ -34,4 +34,53 @@ public enum Venue
     Stadium974,
     [Display(Name = "Al Janoub Stadium, Al Wakrah")]
     AlJanoub,
+}
+
+public enum Seed
+{
+    A,
+    B,
+    C,
+    D,
+    E,
+    F,
+    G,
+    H,
+    P
+}
+
+public enum Country
+{
+    Qatar,
+    Netherlands,
+    Senegal,
+    Ecuador,
+    England,
+    USA,
+    Wales,
+    Iran,
+    Argentina,
+    Poland,
+    Mexico,
+    SaudiArabia,
+    France,
+    Denmark,
+    Tunisia,
+    Australia,
+    Germany,
+    Spain,
+    Japan,
+    CostaRica,
+    Belgium,
+    Croatia,
+    Canada,
+    Morocco,
+    Brazil,
+    Switzerland,
+    Serbia,
+    Cameroon,
+    Portugal,
+    Uruguay,
+    Ghana,
+    Korea
 }
