@@ -28,7 +28,7 @@ public class Helpers
         .ToList();
     }
 
-    internal static int[] GetGroupData(Country team, List<Match> matches)
+    internal static int[] GetGroupData(Country? team, List<Match> matches)
     {
         var result = new int[5];
         var points = 0;

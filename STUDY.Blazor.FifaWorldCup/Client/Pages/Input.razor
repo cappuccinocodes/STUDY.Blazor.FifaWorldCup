@@ -4,7 +4,7 @@
 <EditForm Model="match" OnValidSubmit="@SaveItem">
     <div class="form-group">
         <div>
-            <label>@match.Team1</label>
+            <label class="team-label">@match.Team1</label>
             <InputNumber @bind-Value="@match.GoalsTeam1" />
             <label>@match.Team2</label>
             <InputNumber @bind-Value="@match.GoalsTeam2" />

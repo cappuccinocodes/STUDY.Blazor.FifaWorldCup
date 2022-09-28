@@ -6,13 +6,15 @@ namespace STUDY.Blazor.FifaWorldCup.Shared.Models;
 public class Match
 {
     public int Id { get; set; }
-    public Country Team1 { get; set; }
-    public Country Team2 { get; set; }
+    public Country? Team1 { get; set; }
+    public Country? Team2 { get; set; }
     public int GoalsTeam1 { get; set; }
     public int GoalsTeam2 { get; set; }
     public Seed Seed { get; set; }
     public Venue Venue { get; set; }
     public string Date { get; set; }
+    public string? Placeholder1 { get; set; }
+    public string? Placeholder2 { get; set; }
     public bool IsFinished { get; set; }
 }
 

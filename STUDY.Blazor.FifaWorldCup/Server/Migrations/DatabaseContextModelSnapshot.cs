@@ -35,13 +35,19 @@ namespace STUDY.Blazor.FifaWorldCup.Server.Migrations
                     b.Property<bool>("IsFinished")
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Placeholder1")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Placeholder2")
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("Seed")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Team1")
+                    b.Property<int?>("Team1")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Team2")
+                    b.Property<int?>("Team2")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("Venue")
@@ -635,9 +641,9 @@ namespace STUDY.Blazor.FifaWorldCup.Server.Migrations
                             GoalsTeam1 = 0,
                             GoalsTeam2 = 0,
                             IsFinished = false,
+                            Placeholder1 = "1st Group A",
+                            Placeholder2 = "2nd Group B",
                             Seed = 8,
-                            Team1 = 0,
-                            Team2 = 0,
                             Venue = 1
                         },
                         new
@@ -647,9 +653,9 @@ namespace STUDY.Blazor.FifaWorldCup.Server.Migrations
                             GoalsTeam1 = 0,
                             GoalsTeam2 = 0,
                             IsFinished = false,
+                            Placeholder1 = "1st Group C",
+                            Placeholder2 = "2nd Group D",
                             Seed = 8,
-                            Team1 = 0,
-                            Team2 = 0,
                             Venue = 3
                         },
                         new
@@ -659,9 +665,9 @@ namespace STUDY.Blazor.FifaWorldCup.Server.Migrations
                             GoalsTeam1 = 0,
                             GoalsTeam2 = 0,
                             IsFinished = false,
+                            Placeholder1 = "1st Group B",
+                            Placeholder2 = "2nd Group A",
                             Seed = 8,
-                            Team1 = 0,
-                            Team2 = 0,
                             Venue = 2
                         },
                         new
@@ -671,9 +677,9 @@ namespace STUDY.Blazor.FifaWorldCup.Server.Migrations
                             GoalsTeam1 = 0,
                             GoalsTeam2 = 0,
                             IsFinished = false,
+                            Placeholder1 = "1st Group D",
+                            Placeholder2 = "2nd Group C",
                             Seed = 8,
-                            Team1 = 0,
-                            Team2 = 0,
                             Venue = 0
                         },
                         new
@@ -683,9 +689,9 @@ namespace STUDY.Blazor.FifaWorldCup.Server.Migrations
                             GoalsTeam1 = 0,
                             GoalsTeam2 = 0,
                             IsFinished = false,
+                            Placeholder1 = "1st Group E",
+                            Placeholder2 = "2nd Group F",
                             Seed = 8,
-                            Team1 = 0,
-                            Team2 = 0,
                             Venue = 7
                         },
                         new
@@ -695,9 +701,9 @@ namespace STUDY.Blazor.FifaWorldCup.Server.Migrations
                             GoalsTeam1 = 0,
                             GoalsTeam2 = 0,
                             IsFinished = false,
+                            Placeholder1 = "1st Group G",
+                            Placeholder2 = "2nd Group H",
                             Seed = 8,
-                            Team1 = 0,
-                            Team2 = 0,
                             Venue = 6
                         },
                         new
@@ -707,9 +713,9 @@ namespace STUDY.Blazor.FifaWorldCup.Server.Migrations
                             GoalsTeam1 = 0,
                             GoalsTeam2 = 0,
                             IsFinished = false,
+                            Placeholder1 = "1st Group F",
+                            Placeholder2 = "2nd Group E",
                             Seed = 8,
-                            Team1 = 0,
-                            Team2 = 0,
                             Venue = 5
                         },
                         new
@@ -719,9 +725,9 @@ namespace STUDY.Blazor.FifaWorldCup.Server.Migrations
                             GoalsTeam1 = 0,
                             GoalsTeam2 = 0,
                             IsFinished = false,
+                            Placeholder1 = "1st Group H",
+                            Placeholder2 = "2nd Group G",
                             Seed = 8,
-                            Team1 = 0,
-                            Team2 = 0,
                             Venue = 4
                         },
                         new
@@ -731,9 +737,9 @@ namespace STUDY.Blazor.FifaWorldCup.Server.Migrations
                             GoalsTeam1 = 0,
                             GoalsTeam2 = 0,
                             IsFinished = false,
+                            Placeholder1 = "Winners Match 49",
+                            Placeholder2 = "Winners Match 50",
                             Seed = 8,
-                            Team1 = 0,
-                            Team2 = 0,
                             Venue = 5
                         },
                         new
@@ -743,9 +749,9 @@ namespace STUDY.Blazor.FifaWorldCup.Server.Migrations
                             GoalsTeam1 = 0,
                             GoalsTeam2 = 0,
                             IsFinished = false,
+                            Placeholder1 = "Winners Match 53",
+                            Placeholder2 = "Winners Match 54",
                             Seed = 8,
-                            Team1 = 0,
-                            Team2 = 0,
                             Venue = 4
                         },
                         new
@@ -755,9 +761,9 @@ namespace STUDY.Blazor.FifaWorldCup.Server.Migrations
                             GoalsTeam1 = 0,
                             GoalsTeam2 = 0,
                             IsFinished = false,
+                            Placeholder1 = "Winners Match 51",
+                            Placeholder2 = "Winners Match 52",
                             Seed = 8,
-                            Team1 = 0,
-                            Team2 = 0,
                             Venue = 0
                         },
                         new
@@ -767,9 +773,9 @@ namespace STUDY.Blazor.FifaWorldCup.Server.Migrations
                             GoalsTeam1 = 0,
                             GoalsTeam2 = 0,
                             IsFinished = false,
+                            Placeholder1 = "Winners Match 55",
+                            Placeholder2 = "Winners Match 56",
                             Seed = 8,
-                            Team1 = 0,
-                            Team2 = 0,
                             Venue = 2
                         },
                         new
@@ -779,9 +785,9 @@ namespace STUDY.Blazor.FifaWorldCup.Server.Migrations
                             GoalsTeam1 = 0,
                             GoalsTeam2 = 0,
                             IsFinished = false,
+                            Placeholder1 = "Winners Match 57",
+                            Placeholder2 = "Winners Match 58",
                             Seed = 8,
-                            Team1 = 0,
-                            Team2 = 0,
                             Venue = 4
                         },
                         new
@@ -791,9 +797,9 @@ namespace STUDY.Blazor.FifaWorldCup.Server.Migrations
                             GoalsTeam1 = 0,
                             GoalsTeam2 = 0,
                             IsFinished = false,
+                            Placeholder1 = "Winners Match 59",
+                            Placeholder2 = "Winners Match 60",
                             Seed = 8,
-                            Team1 = 0,
-                            Team2 = 0,
                             Venue = 0
                         },
                         new
@@ -803,9 +809,9 @@ namespace STUDY.Blazor.FifaWorldCup.Server.Migrations
                             GoalsTeam1 = 0,
                             GoalsTeam2 = 0,
                             IsFinished = false,
+                            Placeholder1 = "Losers Match 61",
+                            Placeholder2 = "Losers Match 62",
                             Seed = 8,
-                            Team1 = 0,
-                            Team2 = 0,
                             Venue = 1
                         },
                         new
@@ -815,9 +821,9 @@ namespace STUDY.Blazor.FifaWorldCup.Server.Migrations
                             GoalsTeam1 = 0,
                             GoalsTeam2 = 0,
                             IsFinished = false,
+                            Placeholder1 = "Winners Match 61",
+                            Placeholder2 = "Winners Match 62",
                             Seed = 8,
-                            Team1 = 0,
-                            Team2 = 0,
                             Venue = 4
                         });
                 });

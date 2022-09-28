@@ -596,10 +596,10 @@ public partial class DatabaseContext : DbContext
              new Match
              {
                  Id = 49,
-                 Team1 = Country.Unknown,
-                 Team2 = Country.Unknown,
                  GoalsTeam1 = 0,
                  GoalsTeam2 = 0,
+                 Placeholder1 = "1st Group A",
+                 Placeholder2 = "2nd Group B",
                  Seed = Seed.P,
                  Venue = Venue.Khalifa,
                  Date = "2022-12-03 15:00:00",
@@ -608,10 +608,10 @@ public partial class DatabaseContext : DbContext
              new Match
              {
                  Id = 50,
-                 Team1 = Country.Unknown,
-                 Team2 = Country.Unknown,
                  GoalsTeam1 = 0,
                  GoalsTeam2 = 0,
+                 Placeholder1 = "1st Group C",
+                 Placeholder2 = "2nd Group D",
                  Seed = Seed.P,
                  Venue = Venue.Ahmad,
                  Date = "2022-12-03 19:00:00",
@@ -620,10 +620,10 @@ public partial class DatabaseContext : DbContext
              new Match
              {
                  Id = 51,
-                 Team1 = Country.Unknown,
-                 Team2 = Country.Unknown,
                  GoalsTeam1 = 0,
                  GoalsTeam2 = 0,
+                 Placeholder1 = "1st Group B",
+                 Placeholder2 = "2nd Group A",
                  Seed = Seed.P,
                  Venue = Venue.AlThumama,
                  Date = "2022-12-04 19:00:00",
@@ -632,10 +632,10 @@ public partial class DatabaseContext : DbContext
              new Match
              {
                  Id = 52,
-                 Team1 = Country.Unknown,
-                 Team2 = Country.Unknown,
                  GoalsTeam1 = 0,
                  GoalsTeam2 = 0,
+                 Placeholder1 = "1st Group D",
+                 Placeholder2 = "2nd Group C",
                  Seed = Seed.P,
                  Venue = Venue.AlBayt,
                  Date = "2022-12-04 15:00:00",
@@ -644,8 +644,8 @@ public partial class DatabaseContext : DbContext
              new Match
              {
                  Id = 53,
-                 Team1 = Country.Unknown,
-                 Team2 = Country.Unknown,
+                 Placeholder1 = "1st Group E",
+                 Placeholder2 = "2nd Group F",
                  GoalsTeam1 = 0,
                  GoalsTeam2 = 0,
                  Seed = Seed.P,
@@ -656,10 +656,10 @@ public partial class DatabaseContext : DbContext
              new Match
              {
                  Id = 54,
-                 Team1 = Country.Unknown,
-                 Team2 = Country.Unknown,
                  GoalsTeam1 = 0,
                  GoalsTeam2 = 0,
+                 Placeholder1 = "1st Group G",
+                 Placeholder2 = "2nd Group H",
                  Seed = Seed.P,
                  Venue = Venue.Stadium974,
                  Date = "2022-12-05 19:00:00",
@@ -668,10 +668,10 @@ public partial class DatabaseContext : DbContext
              new Match
              {
                  Id = 55,
-                 Team1 = Country.Unknown,
-                 Team2 = Country.Unknown,
                  GoalsTeam1 = 0,
                  GoalsTeam2 = 0,
+                 Placeholder1 = "1st Group F",
+                 Placeholder2 = "2nd Group E",
                  Seed = Seed.P,
                  Venue = Venue.Education,
                  Date = "2022-12-06 15:00:00",
@@ -680,10 +680,10 @@ public partial class DatabaseContext : DbContext
              new Match
              {
                  Id = 56,
-                 Team1 = Country.Unknown,
-                 Team2 = Country.Unknown,
                  GoalsTeam1 = 0,
                  GoalsTeam2 = 0,
+                 Placeholder1 = "1st Group H",
+                 Placeholder2 = "2nd Group G",
                  Seed = Seed.P,
                  Venue = Venue.Lusail,
                  Date = "2022-12-06 19:00:00",
@@ -692,10 +692,10 @@ public partial class DatabaseContext : DbContext
              new Match
              {
                  Id = 57,
-                 Team1 = Country.Unknown,
-                 Team2 = Country.Unknown,
                  GoalsTeam1 = 0,
                  GoalsTeam2 = 0,
+                 Placeholder1 = "Winners Match 49",
+                 Placeholder2 = "Winners Match 50",
                  Seed = Seed.P,
                  Venue = Venue.Education,
                  Date = "2022-12-09 15:00:00",
@@ -704,10 +704,10 @@ public partial class DatabaseContext : DbContext
              new Match
              {
                  Id = 58,
-                 Team1 = Country.Unknown,
-                 Team2 = Country.Unknown,
                  GoalsTeam1 = 0,
                  GoalsTeam2 = 0,
+                 Placeholder1 = "Winners Match 53",
+                 Placeholder2 = "Winners Match 54",
                  Seed = Seed.P,
                  Venue = Venue.Lusail,
                  Date = "2022-12-09 19:00:00",
@@ -716,10 +716,10 @@ public partial class DatabaseContext : DbContext
              new Match
              {
                  Id = 59,
-                 Team1 = Country.Unknown,
-                 Team2 = Country.Unknown,
                  GoalsTeam1 = 0,
                  GoalsTeam2 = 0,
+                 Placeholder1 = "Winners Match 51",
+                 Placeholder2 = "Winners Match 52",
                  Seed = Seed.P,
                  Venue = Venue.AlBayt,
                  Date = "2022-12-10 19:00:00",
@@ -728,10 +728,10 @@ public partial class DatabaseContext : DbContext
              new Match
              {
                  Id = 60,
-                 Team1 = Country.Unknown,
-                 Team2 = Country.Unknown,
                  GoalsTeam1 = 0,
                  GoalsTeam2 = 0,
+                 Placeholder1 = "Winners Match 55",
+                 Placeholder2 = "Winners Match 56",
                  Seed = Seed.P,
                  Venue = Venue.AlThumama,
                  Date = "2022-12-10 15:00:00",
@@ -740,10 +740,10 @@ public partial class DatabaseContext : DbContext
              new Match
              {
                  Id = 61,
-                 Team1 = Country.Unknown,
-                 Team2 = Country.Unknown,
                  GoalsTeam1 = 0,
                  GoalsTeam2 = 0,
+                 Placeholder1 = "Winners Match 57",
+                 Placeholder2 = "Winners Match 58",
                  Seed = Seed.P,
                  Venue = Venue.Lusail,
                  Date = "2022-12-13 19:00:00",
@@ -752,10 +752,10 @@ public partial class DatabaseContext : DbContext
              new Match
              {
                  Id = 62,
-                 Team1 = Country.Unknown,
-                 Team2 = Country.Unknown,
                  GoalsTeam1 = 0,
                  GoalsTeam2 = 0,
+                 Placeholder1 = "Winners Match 59",
+                 Placeholder2 = "Winners Match 60",
                  Seed = Seed.P,
                  Venue = Venue.AlBayt,
                  Date = "2022-12-14 19:00:00",
@@ -764,10 +764,10 @@ public partial class DatabaseContext : DbContext
              new Match
              {
                  Id = 63,
-                 Team1 = Country.Unknown,
-                 Team2 = Country.Unknown,
                  GoalsTeam1 = 0,
                  GoalsTeam2 = 0,
+                 Placeholder1 = "Losers Match 61",
+                 Placeholder2 = "Losers Match 62",
                  Seed = Seed.P,
                  Venue = Venue.Khalifa,
                  Date = "2022-12-17 15:00:00",
@@ -776,10 +776,10 @@ public partial class DatabaseContext : DbContext
              new Match
              {
                  Id = 64,
-                 Team1 = Country.Unknown,
-                 Team2 = Country.Unknown,
                  GoalsTeam1 = 0,
                  GoalsTeam2 = 0,
+                 Placeholder1 = "Winners Match 61",
+                 Placeholder2 = "Winners Match 62",
                  Seed = Seed.P,
                  Venue = Venue.Lusail,
                  Date = "2022-12-18 15:00:00",
