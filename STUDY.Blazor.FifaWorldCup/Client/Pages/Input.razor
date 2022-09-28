@@ -4,10 +4,19 @@
 <EditForm Model="match" OnValidSubmit="@SaveItem">
     <div class="form-group">
         <div>
-            <label class="team-label">@match.Team1</label>
-            <InputNumber @bind-Value="@match.GoalsTeam1" />
-            <label>@match.Team2</label>
-            <InputNumber @bind-Value="@match.GoalsTeam2" />
+            @{if (match.Seed != Seed.P) {
+                    <label class="team-label">@match.Team1</label>
+            } else {
+                    <label class="team-label">@match.Placeholder1</label>
+            }}
+            <InputNumber class="goals-input" @bind-Value="@match.GoalsTeam1" />
+
+            @{if (match.Seed != Seed.P) {
+                <label class="team-label">@match.Team2</label>
+            } else {
+                <label class="team-label">@match.Placeholder2</label>
+            }}
+            <InputNumber class="goals-input" @bind-Value="@match.GoalsTeam2" />
             <button type="submit" class="btn btn-primary">Save</button>
         </div>
     </div>
@@ -25,3 +34,13 @@
         await Http.PostAsJsonAsync("api/Matches", match);
     }
 }
+
+<style>
+    .goals-input {
+        width: 50px;
+    }
+
+    .team-label {
+        width: 100px;
+    }
+</style>
