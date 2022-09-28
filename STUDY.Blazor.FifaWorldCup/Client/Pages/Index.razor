@@ -1,11 +1,12 @@
 ﻿@page "/"
+@using STUDY.Blazor.FifaWorldCup.Shared
 @using STUDY.Blazor.FifaWorldCup.Shared.Models
 
 @inject HttpClient Http
 
 @foreach (var m in matches)
 {
-    <Input match="@m"/>
+    <Input match="@m" />
 }
 
 @code {
@@ -36,7 +37,103 @@
             Console.WriteLine(e.Message);
         }
 
+        if (matches[15].IsFinished) PopulateRoundOf16();
+        if (matches[48].IsFinished) PopulateQuarterFinals();
+        if (matches[56].IsFinished) PopulateSemiFinals();
+        if (matches[60].IsFinished) PopulateFinals();
     }
 
-    
+    void PopulateRoundOf16()
+    {
+        var groupA = Helpers.GetTeams(matches.Where(x => x.Seed == Seed.A).ToList());
+        var groupB = Helpers.GetTeams(matches.Where(x => x.Seed == Seed.B).ToList());
+        var groupC = Helpers.GetTeams(matches.Where(x => x.Seed == Seed.C).ToList());
+        var groupD = Helpers.GetTeams(matches.Where(x => x.Seed == Seed.D).ToList());
+        var groupE = Helpers.GetTeams(matches.Where(x => x.Seed == Seed.E).ToList());
+        var groupF = Helpers.GetTeams(matches.Where(x => x.Seed == Seed.F).ToList());
+        var groupG = Helpers.GetTeams(matches.Where(x => x.Seed == Seed.G).ToList());
+        var groupH = Helpers.GetTeams(matches.Where(x => x.Seed == Seed.H).ToList());
+
+        matches[48].Team1 = groupA[0].Name;
+        matches[48].Team2 = groupB[1].Name;
+        matches[49].Team1 = groupC[0].Name;
+        matches[49].Team2 = groupD[1].Name;
+        matches[50].Team1 = groupB[0].Name;
+        matches[50].Team2 = groupA[1].Name;
+        matches[51].Team1 = groupD[0].Name;
+        matches[51].Team2 = groupC[1].Name;
+        matches[52].Team1 = groupE[0].Name;
+        matches[52].Team2 = groupF[1].Name;
+        matches[53].Team1 = groupG[0].Name;
+        matches[53].Team2 = groupH[1].Name;
+        matches[54].Team1 = groupF[0].Name;
+        matches[54].Team2 = groupE[1].Name;
+        matches[55].Team1 = groupH[0].Name;
+        matches[55].Team2 = groupG[1].Name;
+    }
+
+    void PopulateQuarterFinals()
+    {
+        matches[56].Team1 = matches[48].GoalsTeam1 > matches[48].GoalsTeam2 ? matches[48].Team1 : matches[48].Team2;
+
+        if (matches[49].IsFinished)
+        {
+            matches[56].Team2 = matches[49].GoalsTeam1 > matches[49].GoalsTeam2 ? matches[49].Team1 : matches[49].Team2;
+        }
+        if (matches[52].IsFinished)
+        {
+            matches[57].Team1 = matches[52].GoalsTeam1 > matches[52].GoalsTeam2 ? matches[52].Team1 : matches[52].Team2;
+        }
+        if (matches[53].IsFinished)
+        {
+            matches[57].Team2 = matches[53].GoalsTeam1 > matches[53].GoalsTeam2 ? matches[53].Team1 : matches[53].Team2;
+        }
+        if (matches[50].IsFinished)
+        {
+            matches[58].Team1 = matches[50].GoalsTeam1 > matches[50].GoalsTeam2 ? matches[50].Team1 : matches[50].Team2;
+        }
+        if (matches[51].IsFinished)
+        {
+            matches[58].Team2 = matches[51].GoalsTeam1 > matches[51].GoalsTeam2 ? matches[51].Team1 : matches[51].Team2;
+        }
+        if (matches[54].IsFinished)
+        {
+            matches[59].Team1 = matches[54].GoalsTeam1 > matches[54].GoalsTeam2 ? matches[54].Team1 : matches[54].Team2;
+        }
+        if (matches[55].IsFinished)
+        {
+            matches[59].Team2 = matches[55].GoalsTeam1 > matches[55].GoalsTeam2 ? matches[55].Team1 : matches[55].Team2;
+        }
+    }
+
+    void PopulateSemiFinals() {
+        matches[60].Team1 = matches[56].GoalsTeam1 > matches[56].GoalsTeam2 ? matches[56].Team1 : matches[56].Team2;
+        
+        if (matches[57].IsFinished)
+        {
+            matches[60].Team2 = matches[57].GoalsTeam1 > matches[57].GoalsTeam2 ? matches[57].Team1 : matches[57].Team2;
+        }
+        if (matches[58].IsFinished)
+        {
+            matches[61].Team1 = matches[58].GoalsTeam1 > matches[58].GoalsTeam2 ? matches[58].Team1 : matches[58].Team2;
+        }
+        if (matches[59].IsFinished)
+        {
+            matches[61].Team2 = matches[59].GoalsTeam1 > matches[59].GoalsTeam2 ? matches[59].Team1 : matches[59].Team2;
+        }
+    }
+
+    void PopulateFinals()
+    {
+        matches[63].Team1 = matches[60].GoalsTeam1 < matches[60].GoalsTeam2 ? matches[60].Team1 : matches[60].Team2;
+        matches[64].Team1 = matches[60].GoalsTeam1 > matches[60].GoalsTeam2 ? matches[60].Team1 : matches[60].Team2;
+
+        if (matches[61].IsFinished)
+        {
+            matches[63].Team2 = matches[60].GoalsTeam1 < matches[60].GoalsTeam2 ? matches[60].Team1 : matches[60].Team2;
+
+            matches[64].Team2 = matches[60].GoalsTeam1 > matches[60].GoalsTeam2 ? matches[60].Team1 : matches[60].Team2;
+        }
+    }
+
 }
