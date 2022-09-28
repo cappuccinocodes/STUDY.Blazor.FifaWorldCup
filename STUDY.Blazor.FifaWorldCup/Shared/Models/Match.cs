@@ -51,6 +51,7 @@ public enum Seed
 
 public enum Country
 {
+    Unknown,
     Qatar,
     Netherlands,
     Senegal,

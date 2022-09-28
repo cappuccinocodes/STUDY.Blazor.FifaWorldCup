@@ -592,7 +592,199 @@ public partial class DatabaseContext : DbContext
                 Venue = Venue.Lusail,
                 Date = "2022-12-02 19:00:00",
                 IsFinished = false
-            }
+            },
+             new Match
+             {
+                 Id = 49,
+                 Team1 = Country.Unknown,
+                 Team2 = Country.Unknown,
+                 GoalsTeam1 = 0,
+                 GoalsTeam2 = 0,
+                 Seed = Seed.P,
+                 Venue = Venue.Khalifa,
+                 Date = "2022-12-03 15:00:00",
+                 IsFinished = false
+             },
+             new Match
+             {
+                 Id = 50,
+                 Team1 = Country.Unknown,
+                 Team2 = Country.Unknown,
+                 GoalsTeam1 = 0,
+                 GoalsTeam2 = 0,
+                 Seed = Seed.P,
+                 Venue = Venue.Ahmad,
+                 Date = "2022-12-03 19:00:00",
+                 IsFinished = false
+             },
+             new Match
+             {
+                 Id = 51,
+                 Team1 = Country.Unknown,
+                 Team2 = Country.Unknown,
+                 GoalsTeam1 = 0,
+                 GoalsTeam2 = 0,
+                 Seed = Seed.P,
+                 Venue = Venue.AlThumama,
+                 Date = "2022-12-04 19:00:00",
+                 IsFinished = false
+             },
+             new Match
+             {
+                 Id = 52,
+                 Team1 = Country.Unknown,
+                 Team2 = Country.Unknown,
+                 GoalsTeam1 = 0,
+                 GoalsTeam2 = 0,
+                 Seed = Seed.P,
+                 Venue = Venue.AlBayt,
+                 Date = "2022-12-04 15:00:00",
+                 IsFinished = false
+             },
+             new Match
+             {
+                 Id = 53,
+                 Team1 = Country.Unknown,
+                 Team2 = Country.Unknown,
+                 GoalsTeam1 = 0,
+                 GoalsTeam2 = 0,
+                 Seed = Seed.P,
+                 Venue = Venue.AlJanoub,
+                 Date = "2022-12-05 15:00:00",
+                 IsFinished = false
+             },
+             new Match
+             {
+                 Id = 54,
+                 Team1 = Country.Unknown,
+                 Team2 = Country.Unknown,
+                 GoalsTeam1 = 0,
+                 GoalsTeam2 = 0,
+                 Seed = Seed.P,
+                 Venue = Venue.Stadium974,
+                 Date = "2022-12-05 19:00:00",
+                 IsFinished = false
+             },
+             new Match
+             {
+                 Id = 55,
+                 Team1 = Country.Unknown,
+                 Team2 = Country.Unknown,
+                 GoalsTeam1 = 0,
+                 GoalsTeam2 = 0,
+                 Seed = Seed.P,
+                 Venue = Venue.Education,
+                 Date = "2022-12-06 15:00:00",
+                 IsFinished = false
+             },
+             new Match
+             {
+                 Id = 56,
+                 Team1 = Country.Unknown,
+                 Team2 = Country.Unknown,
+                 GoalsTeam1 = 0,
+                 GoalsTeam2 = 0,
+                 Seed = Seed.P,
+                 Venue = Venue.Lusail,
+                 Date = "2022-12-06 19:00:00",
+                 IsFinished = false
+             },
+             new Match
+             {
+                 Id = 57,
+                 Team1 = Country.Unknown,
+                 Team2 = Country.Unknown,
+                 GoalsTeam1 = 0,
+                 GoalsTeam2 = 0,
+                 Seed = Seed.P,
+                 Venue = Venue.Education,
+                 Date = "2022-12-09 15:00:00",
+                 IsFinished = false
+             },
+             new Match
+             {
+                 Id = 58,
+                 Team1 = Country.Unknown,
+                 Team2 = Country.Unknown,
+                 GoalsTeam1 = 0,
+                 GoalsTeam2 = 0,
+                 Seed = Seed.P,
+                 Venue = Venue.Lusail,
+                 Date = "2022-12-09 19:00:00",
+                 IsFinished = false
+             }, 
+             new Match
+             {
+                 Id = 59,
+                 Team1 = Country.Unknown,
+                 Team2 = Country.Unknown,
+                 GoalsTeam1 = 0,
+                 GoalsTeam2 = 0,
+                 Seed = Seed.P,
+                 Venue = Venue.AlBayt,
+                 Date = "2022-12-10 19:00:00",
+                 IsFinished = false
+             },
+             new Match
+             {
+                 Id = 60,
+                 Team1 = Country.Unknown,
+                 Team2 = Country.Unknown,
+                 GoalsTeam1 = 0,
+                 GoalsTeam2 = 0,
+                 Seed = Seed.P,
+                 Venue = Venue.AlThumama,
+                 Date = "2022-12-10 15:00:00",
+                 IsFinished = false
+             }, 
+             new Match
+             {
+                 Id = 61,
+                 Team1 = Country.Unknown,
+                 Team2 = Country.Unknown,
+                 GoalsTeam1 = 0,
+                 GoalsTeam2 = 0,
+                 Seed = Seed.P,
+                 Venue = Venue.Lusail,
+                 Date = "2022-12-13 19:00:00",
+                 IsFinished = false
+             },
+             new Match
+             {
+                 Id = 62,
+                 Team1 = Country.Unknown,
+                 Team2 = Country.Unknown,
+                 GoalsTeam1 = 0,
+                 GoalsTeam2 = 0,
+                 Seed = Seed.P,
+                 Venue = Venue.AlBayt,
+                 Date = "2022-12-14 19:00:00",
+                 IsFinished = false
+             },
+             new Match
+             {
+                 Id = 63,
+                 Team1 = Country.Unknown,
+                 Team2 = Country.Unknown,
+                 GoalsTeam1 = 0,
+                 GoalsTeam2 = 0,
+                 Seed = Seed.P,
+                 Venue = Venue.Khalifa,
+                 Date = "2022-12-17 15:00:00",
+                 IsFinished = false
+             },
+             new Match
+             {
+                 Id = 64,
+                 Team1 = Country.Unknown,
+                 Team2 = Country.Unknown,
+                 GoalsTeam1 = 0,
+                 GoalsTeam2 = 0,
+                 Seed = Seed.P,
+                 Venue = Venue.Lusail,
+                 Date = "2022-12-18 15:00:00",
+                 IsFinished = false
+             }
             );
 
 

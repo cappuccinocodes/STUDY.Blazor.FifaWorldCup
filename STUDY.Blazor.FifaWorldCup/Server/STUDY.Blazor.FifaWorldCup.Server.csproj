@@ -21,9 +21,5 @@
     <ProjectReference Include="..\Shared\STUDY.Blazor.FifaWorldCup.Shared.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Pages\" />
-  </ItemGroup>
-
 
 </Project>
