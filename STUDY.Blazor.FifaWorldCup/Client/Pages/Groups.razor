@@ -3,26 +3,32 @@
 @using STUDY.Blazor.FifaWorldCup.Shared.Models
 @inject HttpClient Http
 
-<table>
-    <tr>
-    <th></th>
-    <th>MP</th>
-    <th>Pts</th>
-    <th>G</th>
-    <th>GA</th>
-    <th>GD</th>
-    </tr>
-    @foreach (var t in teams)
-    {
+<table class="table">
+    <thead>
         <tr>
-            <td>@t.Name</td>
-            <td>@t.MatchesPlayed</td>
-            <td>@t.Points</td>
-            <td>@t.Goals</td>
-            <td>@t.GoalsAgainst</td>
-            <td>@t.GoalsDifference</td>
+            <th></th>
+            <th></th>
+            <th>MP</th>
+            <th>Pts</th>
+            <th>G</th>
+            <th>GA</th>
+            <th>GD</th>
         </tr>
-    }
+    </thead>
+    <tbody>
+        @foreach (var t in teams)
+        {
+            <tr>
+                <td><img src=@($"/img/{t.Name.ToString().ToLower()}.png") /></td>
+                <td>@t.Name</td>
+                <td>@t.MatchesPlayed</td>
+                <td>@t.Points</td>
+                <td>@t.Goals</td>
+                <td>@t.GoalsAgainst</td>
+                <td>@t.GoalsDifference</td>
+            </tr>
+        }
+    </tbody>
 </table>
 
 @foreach (var m in matches)
@@ -49,7 +55,7 @@
     {
         var group = Enum.Parse<Seed>(Group);
         teams.Clear();
-        
+
         try
         {
             matches = await Http.GetFromJsonAsync<List<Match>>("api/Matches");
@@ -62,3 +68,10 @@
         }
     }
 }
+
+<style>
+    .table {
+        width: 700px;
+        vertical-align: middle;
+    }
+</style>

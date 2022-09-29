@@ -3,11 +3,37 @@
 @using STUDY.Blazor.FifaWorldCup.Shared.Models
 
 @inject HttpClient Http
-
-@foreach (var m in matches)
+<span>Group Stage</span>
+@foreach (var m in matches.Where(x => x.Seed != Seed.P))
 {
     <Input match="@m" />
 }
+
+<span>Round of 16</span>
+@foreach (var m in matches.Where(x => x.Id >= 49 && x.Id <= 56))
+{
+    <Input match="@m" />
+}
+
+<span>Round of 8</span>
+@foreach (var m in matches.Where(x => x.Id >= 57 && x.Id <= 60))
+{
+    <Input match="@m" />
+}
+
+<span>Semi-final</span>
+@foreach (var m in matches.Where(x => x.Id == 61 || x.Id == 62))
+{
+    <Input match="@m" />
+}
+
+<span>Finals</span>
+@foreach (var m in matches.Where(x => x.Id == 63 || x.Id == 64))
+{
+    <Input match="@m" />
+}
+
+
 
 @code {
     protected List<Match> matches = new();
