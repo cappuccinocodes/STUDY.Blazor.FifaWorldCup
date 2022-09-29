@@ -26,7 +26,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.A,
                 Venue = Venue.AlBayt,
-                Date = "2022-11-20 16:00:00",
+                Date = DateTime.Parse("2022-11-20 16:00:00"),
                 IsFinished = false,
             },
             new Match
@@ -38,7 +38,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.B,
                 Venue = Venue.Khalifa,
-                Date = "2022-11-21 13:00:00",
+                Date = DateTime.Parse("2022-11-21 13:00:00"),
                 IsFinished = false
             },
             new Match
@@ -50,7 +50,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.A,
                 Venue = Venue.AlThumama,
-                Date = "2022-11-21 16:00:00",
+                Date = DateTime.Parse("2022-11-21 16:00:00"),
                 IsFinished = false
             },
             new Match
@@ -62,7 +62,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.B,
                 Venue = Venue.Ahmad,
-                Date = "2022-11-21 19:00:00",
+                Date = DateTime.Parse("2022-11-21 19:00:00"),
                 IsFinished = false
             },
             new Match
@@ -74,7 +74,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.C,
                 Venue = Venue.Lusail,
-                Date = "2022-11-22 10:00:00",
+                Date = DateTime.Parse("2022-11-22 10:00:00"),
                 IsFinished = false
             },
             new Match
@@ -86,7 +86,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.D,
                 Venue = Venue.Education,
-                Date = "2022-11-22 13:00:00",
+                Date = DateTime.Parse("2022-11-22 13:00:00"),
                 IsFinished = false
             },
             new Match
@@ -98,7 +98,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.C,
                 Venue = Venue.Stadium974,
-                Date = "2022-11-22 16:00:00",
+                Date = DateTime.Parse("2022-11-22 16:00:00"),
                 IsFinished = false
             },
             new Match
@@ -110,7 +110,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.D,
                 Venue = Venue.AlJanoub,
-                Date = "2022-11-22 19:00:00",
+                Date = DateTime.Parse("2022-11-22 19:00:00"),
                 IsFinished = false
             },
             new Match
@@ -122,7 +122,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.F,
                 Venue = Venue.AlBayt,
-                Date = "2022-11-23 10:00:00",
+                Date = DateTime.Parse("2022-11-23 10:00:00"),
                 IsFinished = false
             },
             new Match
@@ -134,7 +134,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.E,
                 Venue = Venue.Khalifa,
-                Date = "2022-11-23 13:00:00",
+                Date = DateTime.Parse("2022-11-23 13:00:00"),
                 IsFinished = false
             },
             new Match
@@ -146,7 +146,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.E,
                 Venue = Venue.AlThumama,
-                Date = "2022-11-23 16:00:00",
+                Date = DateTime.Parse("2022-11-23 16:00:00"),
                 IsFinished = false
             },
             new Match
@@ -158,7 +158,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.F,
                 Venue = Venue.Ahmad,
-                Date = "2022-11-23 19:00:00",
+                Date = DateTime.Parse("2022-11-23 19:00:00"),
                 IsFinished = false
             },
             new Match
@@ -170,7 +170,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.G,
                 Venue = Venue.AlJanoub,
-                Date = "2022-11-23 10:00:00",
+                Date = DateTime.Parse("2022-11-23 10:00:00"),
                 IsFinished = false
             },
             new Match
@@ -182,7 +182,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.H,
                 Venue = Venue.Education,
-                Date = "2022-11-24 13:00:00",
+                Date = DateTime.Parse("2022-11-24 13:00:00"),
                 IsFinished = false
             },
             new Match
@@ -194,7 +194,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.H,
                 Venue = Venue.Stadium974,
-                Date = "2022-11-24 16:00:00",
+                Date = DateTime.Parse("2022-11-24 16:00:00"),
                 IsFinished = false
             },
             new Match
@@ -206,7 +206,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.G,
                 Venue = Venue.Khalifa,
-                Date = "2022-11-23 13:00:00",
+                Date = DateTime.Parse("2022-11-23 13:00:00"),
                 IsFinished = false
             },
             new Match
@@ -218,7 +218,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.B,
                 Venue = Venue.Ahmad,
-                Date = "2022-11-25 10:00:00",
+                Date = DateTime.Parse("2022-11-25 10:00:00"),
                 IsFinished = false
             },
             new Match
@@ -230,7 +230,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.A,
                 Venue = Venue.AlThumama,
-                Date = "2022-11-25 13:00:00",
+                Date = DateTime.Parse("2022-11-25 13:00:00"),
                 IsFinished = false
             },
             new Match
@@ -242,7 +242,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.A,
                 Venue = Venue.Khalifa,
-                Date = "2022-11-25 16:00:00",
+                Date = DateTime.Parse("2022-11-25 16:00:00"),
                 IsFinished = false
             },
             new Match
@@ -254,7 +254,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.B,
                 Venue = Venue.Khalifa,
-                Date = "2022-11-25 19:00:00",
+                Date = DateTime.Parse("2022-11-25 19:00:00"),
                 IsFinished = false
             },
             new Match
@@ -266,7 +266,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.D,
                 Venue = Venue.AlJanoub,
-                Date = "2022-11-26 10:00:00",
+                Date = DateTime.Parse("2022-11-26 10:00:00"),
                 IsFinished = false
             },
             new Match
@@ -278,7 +278,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.C,
                 Venue = Venue.Education,
-                Date = "2022-11-26 13:00:00",
+                Date = DateTime.Parse("2022-11-26 13:00:00"),
                 IsFinished = false
             },
             new Match
@@ -290,7 +290,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.D,
                 Venue = Venue.Stadium974,
-                Date = "2022-11-26 16:00:00",
+                Date = DateTime.Parse("2022-11-26 16:00:00"),
                 IsFinished = false
             },
             new Match
@@ -302,7 +302,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.C,
                 Venue = Venue.Lusail,
-                Date = "2022-11-26 19:00:00",
+                Date = DateTime.Parse("2022-11-26 19:00:00"),
                 IsFinished = false
             },
             new Match
@@ -314,7 +314,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.E,
                 Venue = Venue.Ahmad,
-                Date = "2022-11-27 10:00:00",
+                Date = DateTime.Parse("2022-11-27 10:00:00"),
                 IsFinished = false
             },
             new Match
@@ -326,7 +326,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.F,
                 Venue = Venue.AlThumama,
-                Date = "2022-11-27 13:00:00",
+                Date = DateTime.Parse("2022-11-27 13:00:00"),
                 IsFinished = false
             },
             new Match
@@ -338,7 +338,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.F,
                 Venue = Venue.Khalifa,
-                Date = "2022-11-27 16:00:00",
+                Date = DateTime.Parse("2022-11-27 16:00:00"),
                 IsFinished = false
             },
             new Match
@@ -350,7 +350,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.E,
                 Venue = Venue.AlBayt,
-                Date = "2022-11-27 19:00:00",
+                Date = DateTime.Parse("2022-11-27 19:00:00"),
                 IsFinished = false
             },
             new Match
@@ -362,7 +362,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.G,
                 Venue = Venue.AlJanoub,
-                Date = "2022-11-28 10:00:00",
+                Date = DateTime.Parse("2022-11-28 10:00:00"),
                 IsFinished = false
             },
             new Match
@@ -374,7 +374,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.H,
                 Venue = Venue.Education,
-                Date = "2022-11-28 13:00:00",
+                Date = DateTime.Parse("2022-11-28 13:00:00"),
                 IsFinished = false
             },
             new Match
@@ -386,7 +386,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.G,
                 Venue = Venue.Stadium974,
-                Date = "2022-11-28 16:00:00",
+                Date = DateTime.Parse("2022-11-28 16:00:00"),
                 IsFinished = false
             },
             new Match
@@ -398,7 +398,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.H,
                 Venue = Venue.Lusail,
-                Date = "2022-11-28 19:00:00",
+                Date = DateTime.Parse("2022-11-28 19:00:00"),
                 IsFinished = false
             },
             new Match
@@ -410,7 +410,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.A,
                 Venue = Venue.Khalifa,
-                Date = "2022-11-29 15:00:00",
+                Date = DateTime.Parse("2022-11-29 15:00:00"),
                 IsFinished = false
             },
             new Match
@@ -422,7 +422,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.A,
                 Venue = Venue.AlBayt,
-                Date = "2022-11-29 15:00:00",
+                Date = DateTime.Parse("2022-11-29 15:00:00"),
                 IsFinished = false
             },
             new Match
@@ -434,7 +434,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.B,
                 Venue = Venue.Ahmad,
-                Date = "2022-11-29 19:00:00",
+                Date = DateTime.Parse("2022-11-29 19:00:00"),
                 IsFinished = false
             },
             new Match
@@ -446,7 +446,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.B,
                 Venue = Venue.AlThumama,
-                Date = "2022-11-29 19:00:00",
+                Date = DateTime.Parse("2022-11-29 19:00:00"),
                 IsFinished = false
             },
             new Match
@@ -458,7 +458,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.D,
                 Venue = Venue.AlJanoub,
-                Date = "2022-11-30 15:00:00",
+                Date = DateTime.Parse("2022-11-30 15:00:00"),
                 IsFinished = false
             },
             new Match
@@ -470,7 +470,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.D,
                 Venue = Venue.Education,
-                Date = "2022-11-30 15:00:00",
+                Date = DateTime.Parse("2022-11-30 15:00:00"),
                 IsFinished = false
             },
             new Match
@@ -482,7 +482,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.C,
                 Venue = Venue.Stadium974,
-                Date = "2022-11-30 19:00:00",
+                Date = DateTime.Parse("2022-11-30 19:00:00"),
                 IsFinished = false
             },
             new Match
@@ -494,7 +494,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.C,
                 Venue = Venue.Lusail,
-                Date = "2022-11-30 19:00:00",
+                Date = DateTime.Parse("2022-11-30 19:00:00"),
                 IsFinished = false
             },
             new Match
@@ -506,7 +506,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.F,
                 Venue = Venue.Ahmad,
-                Date = "2022-12-01 15:00:00",
+                Date = DateTime.Parse("2022-12-01 15:00:00"),
                 IsFinished = false
             },
             new Match
@@ -518,7 +518,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.F,
                 Venue = Venue.AlThumama,
-                Date = "2022-12-01 15:00:00",
+                Date = DateTime.Parse("2022-12-01 15:00:00"),
                 IsFinished = false
             },
             new Match
@@ -530,7 +530,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.E,
                 Venue = Venue.Khalifa,
-                Date = "2022-12-01 19:00:00",
+                Date = DateTime.Parse("2022-12-01 19:00:00"),
                 IsFinished = false
             },
             new Match
@@ -542,7 +542,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.E,
                 Venue = Venue.AlBayt,
-                Date = "2022-12-01 19:00:00",
+                Date = DateTime.Parse("2022-12-01 19:00:00"),
                 IsFinished = false
             },
             new Match
@@ -554,7 +554,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.H,
                 Venue = Venue.AlJanoub,
-                Date = "2022-12-02 15:00:00",
+                Date = DateTime.Parse("2022-12-02 15:00:00"),
                 IsFinished = false
             },
             new Match
@@ -566,7 +566,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.H,
                 Venue = Venue.Education,
-                Date = "2022-12-02 15:00:00",
+                Date = DateTime.Parse("2022-12-02 15:00:00"),
                 IsFinished = false
             },
             new Match
@@ -578,7 +578,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.G,
                 Venue = Venue.Stadium974,
-                Date = "2022-12-02 19:00:00",
+                Date = DateTime.Parse("2022-12-02 19:00:00"),
                 IsFinished = false
             },
             new Match
@@ -590,7 +590,7 @@ public partial class DatabaseContext : DbContext
                 GoalsTeam2 = 0,
                 Seed = Seed.G,
                 Venue = Venue.Lusail,
-                Date = "2022-12-02 19:00:00",
+                Date = DateTime.Parse("2022-12-02 19:00:00"),
                 IsFinished = false
             },
              new Match
@@ -602,7 +602,7 @@ public partial class DatabaseContext : DbContext
                  Placeholder2 = "2nd Group B",
                  Seed = Seed.P,
                  Venue = Venue.Khalifa,
-                 Date = "2022-12-03 15:00:00",
+                 Date = DateTime.Parse("2022-12-03 15:00:00"),
                  IsFinished = false
              },
              new Match
@@ -614,7 +614,7 @@ public partial class DatabaseContext : DbContext
                  Placeholder2 = "2nd Group D",
                  Seed = Seed.P,
                  Venue = Venue.Ahmad,
-                 Date = "2022-12-03 19:00:00",
+                 Date = DateTime.Parse("2022-12-03 19:00:00"),
                  IsFinished = false
              },
              new Match
@@ -626,7 +626,7 @@ public partial class DatabaseContext : DbContext
                  Placeholder2 = "2nd Group A",
                  Seed = Seed.P,
                  Venue = Venue.AlThumama,
-                 Date = "2022-12-04 19:00:00",
+                 Date = DateTime.Parse("2022-12-04 19:00:00"),
                  IsFinished = false
              },
              new Match
@@ -638,7 +638,7 @@ public partial class DatabaseContext : DbContext
                  Placeholder2 = "2nd Group C",
                  Seed = Seed.P,
                  Venue = Venue.AlBayt,
-                 Date = "2022-12-04 15:00:00",
+                 Date = DateTime.Parse("2022-12-04 15:00:00"),
                  IsFinished = false
              },
              new Match
@@ -650,7 +650,7 @@ public partial class DatabaseContext : DbContext
                  GoalsTeam2 = 0,
                  Seed = Seed.P,
                  Venue = Venue.AlJanoub,
-                 Date = "2022-12-05 15:00:00",
+                 Date = DateTime.Parse("2022-12-05 15:00:00"),
                  IsFinished = false
              },
              new Match
@@ -662,7 +662,7 @@ public partial class DatabaseContext : DbContext
                  Placeholder2 = "2nd Group H",
                  Seed = Seed.P,
                  Venue = Venue.Stadium974,
-                 Date = "2022-12-05 19:00:00",
+                 Date = DateTime.Parse("2022-12-05 19:00:00"),
                  IsFinished = false
              },
              new Match
@@ -674,7 +674,7 @@ public partial class DatabaseContext : DbContext
                  Placeholder2 = "2nd Group E",
                  Seed = Seed.P,
                  Venue = Venue.Education,
-                 Date = "2022-12-06 15:00:00",
+                 Date = DateTime.Parse("2022-12-06 15:00:00"),
                  IsFinished = false
              },
              new Match
@@ -686,7 +686,7 @@ public partial class DatabaseContext : DbContext
                  Placeholder2 = "2nd Group G",
                  Seed = Seed.P,
                  Venue = Venue.Lusail,
-                 Date = "2022-12-06 19:00:00",
+                 Date = DateTime.Parse("2022-12-06 19:00:00"),
                  IsFinished = false
              },
              new Match
@@ -698,7 +698,7 @@ public partial class DatabaseContext : DbContext
                  Placeholder2 = "Winners Match 50",
                  Seed = Seed.P,
                  Venue = Venue.Education,
-                 Date = "2022-12-09 15:00:00",
+                 Date = DateTime.Parse("2022-12-09 15:00:00"),
                  IsFinished = false
              },
              new Match
@@ -710,7 +710,7 @@ public partial class DatabaseContext : DbContext
                  Placeholder2 = "Winners Match 54",
                  Seed = Seed.P,
                  Venue = Venue.Lusail,
-                 Date = "2022-12-09 19:00:00",
+                 Date = DateTime.Parse("2022-12-09 19:00:00"),
                  IsFinished = false
              }, 
              new Match
@@ -722,7 +722,7 @@ public partial class DatabaseContext : DbContext
                  Placeholder2 = "Winners Match 52",
                  Seed = Seed.P,
                  Venue = Venue.AlBayt,
-                 Date = "2022-12-10 19:00:00",
+                 Date = DateTime.Parse("2022-12-10 19:00:00"),
                  IsFinished = false
              },
              new Match
@@ -734,7 +734,7 @@ public partial class DatabaseContext : DbContext
                  Placeholder2 = "Winners Match 56",
                  Seed = Seed.P,
                  Venue = Venue.AlThumama,
-                 Date = "2022-12-10 15:00:00",
+                 Date = DateTime.Parse("2022-12-10 15:00:00"),
                  IsFinished = false
              }, 
              new Match
@@ -746,7 +746,7 @@ public partial class DatabaseContext : DbContext
                  Placeholder2 = "Winners Match 58",
                  Seed = Seed.P,
                  Venue = Venue.Lusail,
-                 Date = "2022-12-13 19:00:00",
+                 Date = DateTime.Parse("2022-12-13 19:00:00"),
                  IsFinished = false
              },
              new Match
@@ -758,7 +758,7 @@ public partial class DatabaseContext : DbContext
                  Placeholder2 = "Winners Match 60",
                  Seed = Seed.P,
                  Venue = Venue.AlBayt,
-                 Date = "2022-12-14 19:00:00",
+                 Date = DateTime.Parse("2022-12-14 19:00:00"),
                  IsFinished = false
              },
              new Match
@@ -770,7 +770,7 @@ public partial class DatabaseContext : DbContext
                  Placeholder2 = "Losers Match 62",
                  Seed = Seed.P,
                  Venue = Venue.Khalifa,
-                 Date = "2022-12-17 15:00:00",
+                 Date = DateTime.Parse("2022-12-17 15:00:00"),
                  IsFinished = false
              },
              new Match
@@ -782,7 +782,7 @@ public partial class DatabaseContext : DbContext
                  Placeholder2 = "Winners Match 62",
                  Seed = Seed.P,
                  Venue = Venue.Lusail,
-                 Date = "2022-12-18 15:00:00",
+                 Date = DateTime.Parse("2022-12-18 15:00:00"),
                  IsFinished = false
              }
             );

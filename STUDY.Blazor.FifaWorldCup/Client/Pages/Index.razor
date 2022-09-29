@@ -30,7 +30,8 @@
     {
         try
         {
-            matches = await Http.GetFromJsonAsync<List<Match>>("api/Matches");
+            var rawMatches = await Http.GetFromJsonAsync<List<Match>>("api/Matches");
+            matches = rawMatches.OrderBy(x => x.Date).ToList();
         }
         catch (Exception e)
         {

@@ -12,7 +12,7 @@ public class Match
     public int GoalsTeam2 { get; set; }
     public Seed Seed { get; set; }
     public Venue Venue { get; set; }
-    public string Date { get; set; }
+    public DateTime Date { get; set; }
     public string? Placeholder1 { get; set; }
     public string? Placeholder2 { get; set; }
     public bool IsFinished { get; set; }
@@ -53,7 +53,6 @@ public enum Seed
 
 public enum Country
 {
-    Unknown,
     Qatar,
     Netherlands,
     Senegal,
