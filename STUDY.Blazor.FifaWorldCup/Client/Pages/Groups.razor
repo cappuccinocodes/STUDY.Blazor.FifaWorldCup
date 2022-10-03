@@ -1,10 +1,39 @@
 ﻿@page "/group/{Group}"
+@using STUDY.Blazor.FifaWorldCup.Shared
 @using STUDY.Blazor.FifaWorldCup.Shared.Models
 @inject HttpClient Http
 
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th>MP</th>
+            <th>Pts</th>
+            <th>G</th>
+            <th>GA</th>
+            <th>GD</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var t in teams)
+        {
+            <tr>
+                <td><img src=@($"/img/{t.Name.ToString().ToLower()}.png") /></td>
+                <td>@t.Name</td>
+                <td>@t.MatchesPlayed</td>
+                <td>@t.Points</td>
+                <td>@t.Goals</td>
+                <td>@t.GoalsAgainst</td>
+                <td>@t.GoalsDifference</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
 @foreach (var m in matches)
 {
-    <Input match="@m"/>
+    <Input match="@m" />
 }
 
 @code {
@@ -24,30 +53,25 @@
 
     protected async Task Fetch()
     {
-        var group = Group.ToCharArray()[0];
+        var group = Enum.Parse<Seed>(Group);
+        teams.Clear();
+
         try
         {
             matches = await Http.GetFromJsonAsync<List<Match>>("api/Matches");
             matches = matches.Where(x => x.Seed == group).ToList();
-            teams = GetTeams(matches);
+            teams = Helpers.GetTeams(matches);
         }
         catch (Exception e)
         {
             Console.WriteLine(e.Message);
         }
     }
-
-    internal List<Team> GetTeams(List<Match> incomingMatches) {
-        var teamNames = matches.Select(m => m.Team1).Concat(matches.Select(m => m.Team2)).Distinct();
-        foreach (var team in teamNames){
-            teams.Add(new Team
-                {
-                    Name = team,
-                    Goals = GetGoals(team),
-                    GoalsAgainst = GetGoalsAgainst(team),
-                    Points = GetPoints(team)
-
-                });                                    
-        }
-    }
 }
+
+<style>
+    .table {
+        width: 700px;
+        vertical-align: middle;
+    }
+</style>
