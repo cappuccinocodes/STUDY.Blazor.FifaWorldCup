@@ -23,6 +23,7 @@
         <input disabled type="text" class="form-control" value=@(match.Seed == Seed.P ? match.Placeholder1 : match.Team2)>
         <div class="input-group-append">
             <button class="btn btn-outline-secondary" type="button">Button</button>
+           
         </div>
     </div>
 </EditForm>
@@ -42,13 +43,6 @@
 
 <style>
     .goals-input {
-        max-width: 30px !important;
-        text-align: center;
-    }
-
-    .team-label {
-        width: 100px;
-        padding-left: 5px;
         font-weight: 600;
         vertical-align: center;
         border: 1px red dotted;

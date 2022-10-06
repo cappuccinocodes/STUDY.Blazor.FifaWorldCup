@@ -11,7 +11,7 @@ using STUDY.Blazor.FifaWorldCup.Server.Models;
 namespace STUDY.Blazor.FifaWorldCup.Server.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20221002182517_initial")]
+    [Migration("20221006011843_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
